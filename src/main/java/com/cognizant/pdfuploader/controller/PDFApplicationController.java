@@ -126,7 +126,7 @@ public class PDFApplicationController {
 			if (!CollectionUtils.isEmpty(customerDataList)) {
 				getResponseList(response, customerDataList);
 			} else {
-				response.add(utils.populateErrorResponseBean(CTS_ERR_004, "No Files Available to remove"));
+				response.add(utils.populateErrorResponseBean(CTS_ERR_004, "Please upload the files"));
 			}
 
 		} catch (Exception e) {
